@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #33658A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    width: 90%;
+    height: 10%;
+    margin-left: 10%;
+    /* z-index: 2; */
+}
+
+.navbar p:hover {
+    background-color: #2f4858;
+    font-size: 120%;
+    transition: 0.5s;
+    cursor: pointer;
+}
