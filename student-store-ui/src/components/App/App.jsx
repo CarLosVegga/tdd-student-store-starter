@@ -50,7 +50,7 @@ export default function App() {
       setCurrentProducts(products)
     }
     else {
-      setCurrentProducts(products.filter(product =>  product.name.toLowerCase().includes((searchStatus).toLowerCase())))
+      setCurrentProducts(currentProducts.filter(product =>  product.name.toLowerCase().includes((searchStatus).toLowerCase())))
       console.log(currentProducts)
     }
   },[searchStatus])
