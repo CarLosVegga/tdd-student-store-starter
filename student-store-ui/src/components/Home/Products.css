@@ -53,8 +53,8 @@
 }
 
 .productCard .order button {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border: none;
     color: white;
     font-size: 90%;;
@@ -64,12 +64,14 @@
 .productCard .order button:hover {
     background-color: grey;
     font-size: 102%;
+    width: 30px;
+    height: 30px;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .order .increase {
-    background-color: #7EA172;
+    background-color: #95d7ae;
 }
 
 .order .decrease {

@@ -2,12 +2,13 @@ import "./Search.css"
 
 export default function App(props) {
     const isSearching = props.searchStatus.length===0?false:true;
-    const buttonClassName =isSearching?'buttonSearchs':'buttonWaits';
+    const buttonClassName = isSearching?'buttonSearchs':'buttonWaits';
+    const instruction = isSearching?'Looking':'Type'; 
     return (
         <>
             <div className="search">
                 <input type="text" value={props.searchStatus} onChange={(e) => props.handleSearchChange(e.target.value)} placeholder="Find your product here!"/>
-                <button type="submit" className={buttonClassName} disabled={!isSearching}>Find</button>
+                <button type="submit" className={buttonClassName} disabled>{instruction}</button>
             </div>
             <div className="categories">
                 <h3>Categories</h3>

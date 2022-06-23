@@ -1,7 +1,6 @@
 import "./Products.css"
 
 export default function App({products}) {
-    console.log(products)
     return (
        createProductsGrid(products)
     )

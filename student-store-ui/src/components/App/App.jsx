@@ -16,11 +16,13 @@ export default function App() {
   const [searchStatus, setSearch] = React.useState('')
   const [categoryStatus, setCategory] = React.useState('All')
   const [products, setProducts] = React.useState([])
+  const [currentProducts, setCurrentProducts] = React.useState([])
 
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios(URL)
       setProducts(data.products)
+      setCurrentProducts(data.products)
     }
       
     fetchData();
@@ -31,12 +33,10 @@ export default function App() {
   }
 
   function handleCategoriesClick(category) {
-    console.log("you clicked button " + category)
     setCategory(category)
   }
 
   function categoryProducts(product){
-    console.log(product.category)
     if (categoryStatus === 'All' || product.category == categoryStatus.toLowerCase())
       return product
     else 
@@ -44,12 +44,24 @@ export default function App() {
     
   }
 
-  const currentProducts = products.filter(categoryProducts)
+  // Products found through find search
+  useEffect(()=>{
+    if (searchStatus.length === 0) {
+      setCurrentProducts(products)
+    }
+    else {
+      setCurrentProducts(products.filter(product =>  product.name.toLowerCase().includes((searchStatus).toLowerCase())))
+      console.log(currentProducts)
+    }
+  },[searchStatus])
+
+  // Products found through filter
+  useEffect(()=>{
+    setCurrentProducts(products.filter(categoryProducts))
+  },[categoryStatus])
 
 
-  function handleSearchSubmit(searchText){
-    
-  }
+
 
   return (
     <div className="app">
