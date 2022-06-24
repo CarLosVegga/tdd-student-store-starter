@@ -7,14 +7,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 1200px){
-    #productGrid{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1400px){
     #productGrid{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1000px){
+    #productGrid{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width: 600px){

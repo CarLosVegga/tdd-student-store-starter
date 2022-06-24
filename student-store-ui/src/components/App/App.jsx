@@ -2,6 +2,7 @@ import * as React from "react"
 import Navbar from "../Navbar/Navbar"
 import Sidebar from "../Sidebar/Sidebar"
 import Home from "../Home/Home"
+import Footer from "../Footer/Footer.jsx"
 import axios from "axios";
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -61,27 +62,28 @@ export default function App() {
   },[categoryStatus])
 
 
-
-
   return (
     <div className="app">
       <BrowserRouter>
         <main>
-        
-          {/* YOUR CODE HERE! */}
-          {/* <Routes> */}
-            {/* <Route path="/" element={<Home />} /> */}
             <Navbar />
             <Sidebar />
-            <Home 
-              categoryStatus={categoryStatus}
-              handleCategoriesClick={handleCategoriesClick}
-              categories={categories}
-              products={currentProducts}
-              handleSearchChange={handleSearchChange}
-              searchStatus={searchStatus}
-            />
+            <Routes>
+              <Route path="/" element={
+                <Home 
+                  categoryStatus={categoryStatus}
+                  handleCategoriesClick={handleCategoriesClick}
+                  categories={categories}
+                  products={currentProducts}
+                  handleSearchChange={handleSearchChange}
+                  searchStatus={searchStatus}
+                />
+              } />
+              {/* <Route path="product/:productId" element={<Product />} /> */}
+              {/* <Route path="*" element={<NotFound />} /> */}
+            </Routes>
           {/* </Routes> */}
+          <Footer/>
         </main>
       </BrowserRouter>
     </div>

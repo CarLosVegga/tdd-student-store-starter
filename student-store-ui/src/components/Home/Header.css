@@ -17,5 +17,6 @@ header p {
     font-weight: bold;
     padding: 15px 30px;
     margin: 0 0 10px;
-    font-size: 120%;
+    font-size: 140%;
+    text-align: center;
 }
