@@ -1,0 +1,14 @@
+.loading {
+    margin-left: 10%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.product-detail {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.product-detail img{
+    width: auto;
+}

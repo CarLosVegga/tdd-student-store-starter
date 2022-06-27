@@ -1,10 +1,30 @@
 import * as React from "react"
 import "./Home.css"
+import Hero from "../Hero/Hero.jsx"
+import Search from "./Search.jsx"
+import ProductGrid from "../ProductGrid/ProductGrid.jsx"
+import AboutUs from "./AboutUs"
+import ContactUs from "./ContactUs"
 
-export default function Home() {
+export default function Home({categoryStatus, handleCategoriesClick, categories, handleSearchChange, searchStatus, shoppingCart, products, handleAddItemToCart, handleRemoveItemFromCart}) {
   return (
     <div className="home">
-      <p>Home</p>
+      <Hero/>
+      <Search 
+        categoryStatus={categoryStatus}
+        handleCategoriesClick={handleCategoriesClick}
+        categories={categories}
+        handleSearchChange={handleSearchChange}
+        searchStatus={searchStatus}
+      />
+      <ProductGrid 
+        shoppingCart={shoppingCart}
+        products={products}
+        handleAddItemToCart={handleAddItemToCart}
+        handleRemoveItemFromCart={handleRemoveItemFromCart}
+      />
+      <AboutUs />
+      <ContactUs />
     </div>
   )
 }

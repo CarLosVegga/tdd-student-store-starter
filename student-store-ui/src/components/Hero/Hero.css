@@ -1,0 +1,28 @@
+.hero h2 {
+    font-size: 300%;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0 0;
+    color: white
+}
+
+.hero {
+    background-color: #33658A;
+    width: 96%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.hero p {
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 0 10px;
+    font-size: 140%;
+    text-align: center;
+}
+
+.hero img {
+    width: 15%;
+    height: auto;
+    margin-left: 4%;
+}

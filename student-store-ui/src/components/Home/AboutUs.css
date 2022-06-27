@@ -1,0 +1,16 @@
+.aboutUs {
+    background-color: #f7a278;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 50px;
+    color: white;
+}
+
+.aboutUs h2 {
+    font-size: 150%;
+}
+
+.aboutUs p {
+    font-size: 120%;
+}

@@ -1,10 +1,12 @@
 import * as React from "react"
 import "./Sidebar.css"
+import sidebarIMG from "../../img/cart.png"
 
 export default function Sidebar() {
   return (
     <section className="sidebar">
-      <p>Sidebar</p>
+
+      <img src={sidebarIMG} alt="" />
     </section>
   )
 }
