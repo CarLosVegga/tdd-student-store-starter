@@ -11,12 +11,12 @@ export default function ProductCard({product, productId, showDescription, handle
                         <img src={product.image} alt="Photo for ${product.name}" />
                     </Link>
                 </div>
-                <Quantity quantity={quantity}/>
                 <div className="product-name">
                     <button onClick={() => handleRemoveItemFromCart(productId)} className="remove">-</button>
                     {product.name}
                     <button onClick={() => handleAddItemToCart(productId)} className="add">+</button>
                 </div>
+                <Quantity quantity={quantity}/>
                 <div className="product-price">
                     <p className="price">${product?.price?.toFixed(2)}</p>
                 </div>
@@ -36,6 +36,6 @@ export function Quantity({quantity}){
         return null
     } 
     else {
-        return <div className="product-quantity"><i class="fa-solid fa-cart-circle-check"></i>{quantity}</div>
+        return <div className="product-quantity">{quantity}</div>
     }
 }

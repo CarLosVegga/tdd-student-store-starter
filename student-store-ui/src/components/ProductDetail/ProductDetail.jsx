@@ -30,7 +30,7 @@ export default function ProductDetail({setIsFetching, setError, isFetching, erro
         return <NotFound/>
 
     // Find the quantity for an specific product
-    const shoppingCartProduct = shoppingCart.find(shoppingProduct => shoppingProduct.id === product.id)
+    const shoppingCartProduct = shoppingCart.find(shoppingProduct => shoppingProduct.itemId === product.id)
     const quantity = !shoppingCartProduct?0:shoppingCartProduct.quantity
     
     return (
