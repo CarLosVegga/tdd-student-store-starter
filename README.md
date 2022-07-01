@@ -287,16 +287,15 @@ The following specifications were met on the Express backend and the React front
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Yeah. Learning about filtering data from Lab 1 according to the restaurants, and also the use of states in Lab 2, made me feel prepared about the project. As well, using props in both help me understand how to link variables and functions as needed.
+The lab 1 taught me about how to set servers, respond to the endpoints and in general being able to apply that knowledge was the basis for this part of the project
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-I would have improven the UI. I am not satisfied with the colors I used. Also, I wanted to complete the stretch features of the sidebar, adding all functionalities to the navbar and the footer, as well as showing a message when no product is found.
+I would have implemented a way to check two items with the same id. Also I would have gotten the navbar to work.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-I didn't realize about the required structured. I started working at home since I was sick and when I came back, my instructor pointed out I had to restructure my project.
-I believe it would be easier if in the core features section, you start describing the specifications and not in a dropdown menu, but I will make sure to read all the instructions next time.
+It was complicated to associate the back and front end, but in the end everything went well. I believe I can handle the topics we covered and I just needed more time to implement every stretch feature.
 
 ### Open-source libraries used
 
@@ -304,5 +303,5 @@ I believe it would be easier if in the core features section, you start describi
 
 ### Shout out
 
-This time my shout out is going to be to Sravani. You were of great guidance when I came back to the office, I appreciate every tip and tricks to complete the assignment.
-Also, great thanks to Vincent for always being patient and helping me with my debugs.
+This week I would like to specially thank Nicole for being such a great support while learning these new concepts, you made it a lot easier and I appreciate a lot your help for every problem and hope you enjoyed working withme
+Great thanks to Vincent for always being patient and helping me with my debugs and giving advice on how to approach problems. 
