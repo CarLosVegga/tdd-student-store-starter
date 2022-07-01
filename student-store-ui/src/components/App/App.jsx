@@ -13,7 +13,7 @@ import "./App.css";
 
 const categories = ['All', 'Food', 'Clothing', 'Accessories', 'Tech'];
 const URL = 'https://codepath-store-api.herokuapp.com/store'
-
+// const URL = "http://localhost:3001/store"
 
 export default function App() {
   const [searchStatus, setSearch] = React.useState('')
@@ -100,6 +100,8 @@ export default function App() {
   //       The quantity field should store a number representing how many of that item the user is purchasing.
   //       Don't include the total price here, since we'll be calculating that on the backend. Remember to never trust the client!
   async function handleOnSubmitCheckoutForm(){
+    console.log(checkoutForm)
+    console.log(shoppingCart)
     axios.post(URL, {
       user: checkoutForm,
       shoppingCart: shoppingCart
@@ -108,11 +110,7 @@ export default function App() {
       setCheckoutForm({name: "", email: "",})
       setShoppingCart([])
       setSubmission(true)
-      console.log("response:")
-      console.log(response.data.purchase.receipt.lines)
       setReceipt(response.data.purchase.receipt.lines)
-      console.log("receipt:")
-      console.log(receipt)
     })
     .catch(function (err) {
       setError(err)

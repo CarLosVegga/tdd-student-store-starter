@@ -145,5 +145,73 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "id": 1,
+      "name": "sljdf",
+      "email": "lfdskj",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 1
+        },
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": "5.96",
+      "createAt": "2022-06-30T18:40:08.569Z"
+    },
+    {
+      "id": 2,
+      "name": "Carlos",
+      "email": "carlos@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": "3.26",
+      "createAt": "2022-06-30T18:43:24.865Z"
+    },
+    {
+      "id": 3,
+      "name": "Carlos",
+      "email": "carlos@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": "3.26",
+      "createAt": "2022-06-30T18:46:49.903Z",
+      "receipt": [
+        "Showing receipt for Carlos available at carlos@fb.com"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Carlos",
+      "email": "carlos@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": "3.26",
+      "createAt": "2022-07-01T00:45:30.259Z",
+      "receipt": [
+        "Before taxes, the subtotal was $3.00",
+        "After taxes and fees were applied, the total comes out to $3.26"
+      ]
+    }
+  ]
 }
