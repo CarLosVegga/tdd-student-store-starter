@@ -6,7 +6,7 @@ import ProductGrid from "../ProductGrid/ProductGrid.jsx"
 import AboutUs from "./AboutUs"
 import ContactUs from "./ContactUs"
 
-export default function Home({categoryStatus, handleCategoriesClick, categories, handleSearchChange, searchStatus, shoppingCart, products, handleAddItemToCart, handleRemoveItemFromCart}) {
+export default function Home({categoryStatus, handleCategoriesClick, categories, handleSearchChange, searchStatus, shoppingCart, products, handleAddItemToCart, handleRemoveItemFromCart, isFetching}) {
   return (
     <div className="home">
       <Hero/>
@@ -18,6 +18,7 @@ export default function Home({categoryStatus, handleCategoriesClick, categories,
         searchStatus={searchStatus}
       />
       <ProductGrid 
+        isFetching={isFetching}
         shoppingCart={shoppingCart}
         products={products}
         handleAddItemToCart={handleAddItemToCart}

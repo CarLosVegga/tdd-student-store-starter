@@ -1,20 +1,47 @@
-.sidebar {
+.sidebar, .sidebar-open {
     position: fixed;
     left: 0;
-    max-width: 150px;
-    width: 10%;
     height: 100%;
     background-color: #2f4858;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     z-index: 3;
-
+    transition: 2s;
+    overflow: auto;
 }
 
-.sidebar img {
-    margin-top: 100px;
-    width: 120px;
-    margin-left: 10px;
+.sidebar-open {
+    padding-top: 5%;
+    max-width: 420px;
+    min-width: 350px;
+    width: 20%;
+}
+
+.sidebar {
+    padding-top: 10%;
+    max-width: 150px;
+    min-width: 80px;
+    width: 10%;
+}
+
+.toggle-button {
+    background-color: #2f4858;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    padding: 0 0;
+    transition: 1s;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+    background-color: green;
+    transition: 1s;
+}
+
+.toggle-button img {
+    width: 80px;
+    width: 80px;
 }

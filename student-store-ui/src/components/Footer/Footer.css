@@ -1,9 +1,9 @@
 #footerGrid {
-    width: 90%;
+    width: 92%;
     height: auto;
     background-color: #EEEEEE;
     z-index: 0;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 30px;
     display: grid;
     grid-gap: 20px;

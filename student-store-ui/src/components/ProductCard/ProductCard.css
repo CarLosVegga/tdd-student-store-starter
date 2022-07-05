@@ -12,12 +12,13 @@
     height: 250px;
     cursor: pointer;
     border-radius: 20px;
+    transition: 1.5s;
     border: none;
 }
 
 .product-card img:hover {
     transform: translateY(-8px);
-    transition: 1.5s;
+    opacity: 0.5;
 }
 
 .product-card .product-name {
@@ -47,7 +48,7 @@
 }
 
 .product-name .add {
-    background-color: #95d7ae;
+    background-color: green;
 }
 
 .product-name .remove {

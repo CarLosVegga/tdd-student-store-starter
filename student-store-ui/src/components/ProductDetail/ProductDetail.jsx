@@ -7,11 +7,9 @@ import NotFound from '../NotFound/NotFound';
 import ProductView from '../ProductView/ProductView';
 
 export default function ProductDetail({setIsFetching, setError, isFetching, error, handleAddItemToCart, handleRemoveItemFromCart, shoppingCart}) {
-
     const params = useParams();
     const [product, setProduct] = useState('')
     const productURL = `https://codepath-store-api.herokuapp.com/store/${params.productId}`
-    console.log(productURL)
 
     useEffect(() => {
         async function fetchProductData() {
@@ -30,7 +28,7 @@ export default function ProductDetail({setIsFetching, setError, isFetching, erro
         return <NotFound/>
 
     // Find the quantity for an specific product
-    const shoppingCartProduct = shoppingCart.find(shoppingProduct => shoppingProduct.id === product.id)
+    const shoppingCartProduct = shoppingCart.find(shoppingProduct => shoppingProduct.itemId === product.id)
     const quantity = !shoppingCartProduct?0:shoppingCartProduct.quantity
     
     return (
