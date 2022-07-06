@@ -14,7 +14,8 @@ export default function Sidebar({isOpen, shoppingCart, handleOnToggle, products,
       <button onClick={()=>handleOnToggle()} className="toggle-button" name="cart-button">
         <img src={sidebarIMG} alt="Cart" />
       </button>
-      <ShoppingCart 
+      <div>Hello world</div>
+      <ShoppingCart
         isOpen={isOpen}
         shoppingCart={shoppingCart}
         products={products}
